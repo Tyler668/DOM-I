@@ -54,8 +54,8 @@ allA[5].textContent = 'Contact';
 // Primary H1 ===
 let h1Text = document.querySelector('.cta-text h1');
 h1Text.setAttribute('style', 'white-space: pre;');
-h1Text.textContent = "DOM \n";
-h1Text.textContent += "IS \n";
+h1Text.textContent = "DOM\n";
+h1Text.textContent += "IS\n";
 h1Text.textContent += "AWESOME";
 
 // Button ===
@@ -93,7 +93,7 @@ middleImg.setAttribute('src', "img/mid-page-accent.jpg");
 //Contact Section P Tags ===
 let contactPs = document.querySelectorAll('.contact p');
 contactPs[0].setAttribute('style', 'white-space: pre;');
-contactPs[0].textContent = "123 Way 456 Street \n";
+contactPs[0].textContent = "123 Way 456 Street\n";
 contactPs[0].textContent += "Somewhere, USA";
 
 contactPs[1].textContent = "1 (888) 888-8888";
@@ -104,3 +104,32 @@ contactPs[2].textContent = "sales@greatidea.io";
 //Footer P Tag ===
 let footerP = document.querySelector('footer p');
 footerP.textContent = "Copyright Great Idea! 2018";
+
+
+
+
+
+// Stretch Styling Gib 3 ===
+let bodyStyle = document.querySelector("body");
+bodyStyle.style.backgroundColor = "#117A65";
+
+bodyStyle.style.color = "white";
+
+let navBar = document.querySelector('header');
+navBar.style.backgroundColor = "#0E6251";
+
+
+let footer = document.querySelector('footer');
+footer.style.backgroundColor = "#0E6251";
+
+let images = document.querySelectorAll('img');
+images.forEach(function(element){
+  element.style.boxShadow = "0px 0px 20px #0E6251";
+});
+
+images.forEach(function(element){
+  element.style.borderRadius = "50%";
+});
+
+
+
